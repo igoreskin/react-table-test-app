@@ -19,6 +19,7 @@ class MainContainer extends Component {
         this.setState({
           users: users,
         });
+        console.log(this.state.users)
       })
       .catch(error => console.log(error))
   }

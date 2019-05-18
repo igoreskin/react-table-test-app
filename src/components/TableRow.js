@@ -7,7 +7,7 @@ const TableRow = (props) => {
       <td>{user.userId}</td>
       <td>{user.id}</td>
       <td>{user.title}</td>
-      <td>{user.completed}</td>
+      <td>{`${user.completed}`}</td>
     </tr>
   )
 }

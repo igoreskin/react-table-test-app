@@ -1,0 +1,15 @@
+.users td, .table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.users tr:hover {background-color: #ddd;}
+
+.table th {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #3F51B5;
+  color: white;
+}

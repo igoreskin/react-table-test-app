@@ -1,10 +1,11 @@
 import React from 'react';
 import TableRow from './TableRow';
+import styles from './Table.module.css';
 
 const Table = (props) => {
-  const renderRows = props.users.map(user => <TableRow user={user} key={user.id}/>)
+const renderRows = props.users.map(user => <TableRow user={user} key={user.id}/>)
   return (
-    <table>
+    <table className={styles.table}>
       <colgroup>
         <col style={{width: "20%"}}></col>
         <col style={{width: "30%"}}></col>
@@ -19,7 +20,7 @@ const Table = (props) => {
           <th>Completed ID</th>
         </tr>
       </thead>
-      <tbody>
+      <tbody className={styles.users}>
         {renderRows}
       </tbody>
     </table>
